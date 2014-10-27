@@ -22,7 +22,7 @@ include '../elementsOnPage/topbar.php';
 ?>
 				<?php $email=$_SESSION[sessionemail];
 				if ($email==null){
-				header( 'Location: index.php' ) ;
+				header( 'Location: ../index.php' ) ;
 				}
 ?>
 </header>
