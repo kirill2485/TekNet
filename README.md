@@ -23,7 +23,6 @@ message text,
 name text,
 date datetime,
 postnum (int 11) 
-#note: postnum is optional, it is a feature currently being worked on to sort posts by number,
 );
  CREATE TABLE messages
 (
@@ -33,7 +32,7 @@ time timestamp,
 SentTo text
 );
 
-
+note: Postnum in the status table is optional, it is a feature currently being worked on to sort posts by number.
 
 To-Do
 ======
