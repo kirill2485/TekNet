@@ -47,15 +47,14 @@ if($email != null){
 				<p>
 				Please make sure you are over the age of 13, as it would be illegal for us to knowingly collect information from people under the age of 13. Registration is open to PAUSD students only. Scroll down for all of the FAQ's.
 				<p>
-<form action "uploaddata.php" method="get">
+<form method="get">
 
     Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="email">
     <br>
     Full name: <input type="text" name="name">
     <br>
     <input type="submit" button class="btn btn-1 btn-1a" value="Submit">
-</form>
-
+</form >
 
 <?php
 

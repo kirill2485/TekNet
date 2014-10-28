@@ -13,7 +13,7 @@ include 'getelement.php';
 			<nav id="navigation">
 				<ul id="main-menu">
 					<li class="parent">
-						<a href="nav.php"><?php echo $email ?></a>
+						<a href="nav.php"><?php echo $name ?></a>
 						<ul class="sub-menu">
 							<li><a href="loggedin.php">Home</a></li>
 							<li><a href="comingsoon.php">Messeges</a></li>
