@@ -2,6 +2,7 @@
 include '../includeme.php';
 include '../getelement.php';
 include '../backendstuff/phplogin.php';
+$searchinput=$_SESSION['searchinput'];
 ?>
 <html lang="en" class="no-js">
 
@@ -10,9 +11,9 @@ include '../backendstuff/phplogin.php';
 			<!-- Top Navigation -->
 
 			<header>
-			<link rel="stylesheet" type="text/css" href="css/menu.css">
 			<?php
 include 'topbar.php';
+$newMessage= $_GET["searchbox"];
 ?>
 				<?php $email=$_SESSION[sessionemail];
 				if ($email==null){
@@ -23,9 +24,9 @@ include 'topbar.php';
 			</header>
 			<section class="color-5">
 <form method="post">
-Send to: &nbsp  <input type="text" name="to">
+Send to: &nbsp  <input type="text" name="to" value="<?php echo $searchinput ?>">
 <br>
-Message: &nbsp<input type="text" name="message">
+Message: &nbsp<textarea name="message"></textarea>
 <br>
 <input type="submit" button class="btn btn-1 btn-1a" value="Submit">
 </form>
@@ -34,7 +35,6 @@ $result = $con->query("SELECT * FROM messages WHERE SentTo='$email'");
 $row=$result->fetch_assoc();
 $message= $_POST["message"];
 $to = $_POST["to"];
-echo "test";
 if ($message==null){
     echo "You have to type in your message";
 }
@@ -69,8 +69,6 @@ $column = array();
 
 while($result = mysql_fetch_array($info)){
     $column[] = $row[0];
-//Edited - added semicolon at the End of line.1st and 4th(prev) line
-
 }
 echo $column[0];
 ?>
