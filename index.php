@@ -6,6 +6,7 @@ if($email != null){
     header( 'Location: pages/loggedin.php' ) ;
 }
 ?>
+
 <html lang="en" class="no-js">
 	<head>
 		<title>TekNet Beta Registration</title>
@@ -20,7 +21,8 @@ if($email != null){
 
 		<div class="container">
 			<!-- Top Navigation -->
-
+<center><img src="images/Octocat.png" width="30" height="30">Attention: We are now availible on GitHub. Download us at <a href="https://github.com/kirill2485/TekNet">github.com/kirill2485/TekNet</a>.</center>
+	<a href="#"><hr></a>
 			<header>
 					<div class="inner relative">
 <div style=height:20px; padding-top:50px;"></div>
@@ -61,7 +63,7 @@ $email = $_GET["email"];
 $name = $_GET["name"];
 $position = strpos($email,"@palo-alto.edu");
 if ($position==false && $email!=null){
-    echo "Sorry, you must enter your @palo-alto.edu address to pre-register. To do this, please head over to <a href=\"http://palo-alto.edu\">http://palo-alto.edu</a>, enter in your username and password as you normally would for Schoology, click \"Google Apps\", go to Gmail, and click on your profile on the top right corner of Gmail. This would show your @palo-alto.org email. For help with this, or if you go to a PAUSD school, but don't have an @palo-alto.edu account, please contact support@teknet.tk";
+    echo "<font color='red'>Sorry, you must enter your @palo-alto.edu address to pre-register. To do this, please head over to <a href=\"http://palo-alto.edu\">http://palo-alto.edu</a>, enter in your username and password as you normally would for Schoology, click \"Google Apps\", go to Gmail, and click on your profile on the top right corner of Gmail. This would show your @palo-alto.org email. For help with this, or if you go to a PAUSD school, but don't have an @palo-alto.edu account, please contact support@theteknet.com</font>";
 }
 elseif($email==null){
     echo "Enter your @palo-alto.edu email and your name.";
