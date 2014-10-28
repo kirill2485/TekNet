@@ -91,7 +91,7 @@ mysqli_query($con,"INSERT INTO userinfo (email, name) VALUES ('$email','$name')"
 						</section>
 			<section class="color-5">
 			<h1>I want to help build your website</h1>
-			For volunteering, you can email admin@theteknet.org. Don't forget to mention your skills. We are looking for Security experts (Able to divert a SQL injection), SQL experts, and people willing to switch with the founder to go on a night-shift.
+			For volunteering, you can email admin@theteknet.org. Don't forget to mention your skills. We are looking for Security experts (Able to divert a SQL injection), SQL experts, and people willing to switch with the founder to go on a night-shift. You can also fork us on <a href = "https://github.com/kirill2485/TekNet">GitHub</a>.
 			</section>
 </body>
 </html>
