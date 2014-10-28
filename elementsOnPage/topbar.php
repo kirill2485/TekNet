@@ -18,7 +18,7 @@ include 'getelement.php';
 							<li><a href="../pages/loggedin.php">Home</a></li>
 							<li><a href="../pages/comingsoon.php">Messeges</a></li>
 							<li><a href="../pages/comingsoon.php">Friends</a></li>
-							<li><a href="../pages/comingsoon.php">Find friends</a></li>
+							<li><a href="../pages/findfriends.php">FriendFinder</a></li>
 							<li><a href="../pages/profilesearch.php">Search students</a></li>
 							<li><a href="../pages/comingsoon.php">Homework help</a></li>
 							<li><a href="../pages/settings.php">Settings</a></li>
