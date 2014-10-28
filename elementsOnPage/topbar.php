@@ -15,13 +15,14 @@ include 'getelement.php';
 					<li class="parent">
 						<a href="nav.php"><?php echo $name ?></a>
 						<ul class="sub-menu">
-							<li><a href="loggedin.php">Home</a></li>
-							<li><a href="comingsoon.php">Messeges</a></li>
-							<li><a href="comingsoon.php">Friends</a></li>
-							<li><a href="comingsoon.php">Find friends</a></li>
-							<li><a href="comingsoon.php">Homework help</a></li>
-							<li><a href="settings.php">Settings</a></li>
-							<li><a href="logout.php">Logout</a></li>
+							<li><a href="../pages/loggedin.php">Home</a></li>
+							<li><a href="../pages/comingsoon.php">Messeges</a></li>
+							<li><a href="../pages/comingsoon.php">Friends</a></li>
+							<li><a href="../pages/comingsoon.php">Find friends</a></li>
+							<li><a href="../pages/profilesearch.php">Search students</a></li>
+							<li><a href="../pages/comingsoon.php">Homework help</a></li>
+							<li><a href="../pages/settings.php">Settings</a></li>
+							<li><a href="../pages/logout.php">Logout</a></li>
 							
 						</ul>
 					</li>
