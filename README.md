@@ -1,3 +1,7 @@
+What is TekNet
+======
+TekNet is a unique open-source social network currently open to PAUSD Students. If you are a non-PAUSD student, feel free to use this code to create your own social network. 
+
 Instructions for running TekNet
 ======
 Make a file in /backend and call it "phplogin.php"
@@ -40,3 +44,6 @@ To-Do
 - Create profile page
   - Friends
   - TekCoins
+  - Profile Pictures
+  - Get Me Rated
+- Possibility to delete users account on request
