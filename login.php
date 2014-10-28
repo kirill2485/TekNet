@@ -54,4 +54,4 @@ mysqli_close($con);
 				?>
 				
 </section>
-<font color=teal>TheTekNet Version 0.03 Alpha</font>
+<font color=teal><?php include 'version.php'?></font>
