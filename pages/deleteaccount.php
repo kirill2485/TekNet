@@ -6,7 +6,7 @@ include '../includeme.php';
 	<head>
 
 		<title> TekNet - Settings </title>
-</head
+</head>
 
 <body>
 		<div class="container">
