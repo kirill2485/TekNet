@@ -44,6 +44,7 @@ if($email != null){
 		</div>
 				<h1>Beta Registration <span> Register to be one of the first beta users on our site</h1>	
 			</header>
+			<section class="color-1">
 				<p class="text note-touch">Sign-ups are currrently closed. You may try using the demo version of the site by clicking "Sign in" at the top right corner, and using the provided demo account. Please enter your email and name to pre-register and receive updates on TekNet's progress.</p>
 				<p>
 		<br>
