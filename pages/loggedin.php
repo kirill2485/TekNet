@@ -4,13 +4,16 @@
 <title>TekNet - Home</title>
 
 </head>
+
 			<?php
 include '../includeme.php';
 include '../getelement.php';
 include '../backendstuff/phplogin.php';
 
 ?>
+
 <header>
+	<center><img src="../images/theteknet.png"></center>
 				<?php 
 				echo "<h1>TekNet - Home  </h1> <span>Welcome back, $email </span>";
 				?>
@@ -34,9 +37,14 @@ $_SESSION['name'] = $name[0];
 
 $namestatus=$con->query("SELECT name,message,postnum FROM status ORDER BY postnum");
 $statusentery = $_POST[status];
+$position = strpos($statusentery,"<");
+if ($position === 0){
+	echo "Sorry, for security purposes we do not allow characters such as <";
+	exit;
+}
 if ($statusentery != null){
 if ($con->query("INSERT INTO status(message, name, date, postnum) VALUES('$statusentery', '$name[0]', now(), 2)") === TRUE) {
-    echo "Buzz posted";
+    echo "<script>document.location.href='http://www.theteknet.com'</script>";
 }
 else {
     echo "Error: " . $sql . "<br>" . $con->error;
@@ -73,4 +81,5 @@ echo $name[0];
 
 
 ?>
+<br>
 </body>

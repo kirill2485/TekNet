@@ -15,9 +15,9 @@ session_start();
 			<!-- Top Navigation -->
 
 			<header>
-
+<a href="index.php"><img src="images/theteknet.png"></a>
 			<div class="clear"></div>
-				<h1>TekNet Login <span>Welcome back, please login</h1>	
+				<h1>Login <span>Welcome back, please login</h1>	
 			</header>
 			<section class="color-1">
 				<p class="text note-touch">Please enter your email and password. <br>To try out this site as a demo user, please login as email: jsmith@palo-alto.edu, password: demouser</p>

@@ -9,7 +9,7 @@ if($email != null){
 
 <html lang="en" class="no-js">
 	<head>
-		<title>TekNet Beta Registration</title>
+		<title>Beta Registration</title>
 		<meta name="description" content="TekNet Beta registration" />
 		<link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
@@ -25,7 +25,9 @@ if($email != null){
 	<a href="#"><hr></a>
 			<header>
 					<div class="inner relative">
+						<img src="images/theteknet.png">
 <div style=height:20px; padding-top:50px;"></div>
+
 			<a id="menu-toggle" class="button dark" href="#""></i></a>
 			<nav id="navigation">
 				<ul id="main-menu">
@@ -40,12 +42,12 @@ if($email != null){
 			</nav>
 			<div class="clear"></div>
 		</div>
-				<h1>TekNet Beta Registration <span> Register to be one of the first beta users on our site</h1>	
+				<h1>Beta Registration <span> Register to be one of the first beta users on our site</h1>	
 			</header>
-			<section class="color-1">
 				<p class="text note-touch">Sign-ups are currrently closed. You may try using the demo version of the site by clicking "Sign in" at the top right corner, and using the provided demo account. Please enter your email and name to pre-register and receive updates on TekNet's progress.</p>
 				<p>
-				Please make sure you are over the age of 13, as it would be illegal for us to knowingly collect information from people under the age of 13. Registration is open to PAUSD students only. Scroll down for all of the FAQ's.
+		<br>
+					Please make sure you are over the age of 13, as it would be illegal for us to knowingly collect information from people under the age of 13. Registration is open to PAUSD students only. Scroll down for all of the FAQ's.
 				<p>
 <form method="get">
 
@@ -57,7 +59,6 @@ if($email != null){
 </form >
 
 <?php
-
 $email = $_GET["email"];
 $name = $_GET["name"];
 $position = strpos($email,"@palo-alto.edu");
@@ -67,7 +68,6 @@ if ($position==false && $email!=null){
 elseif($email==null){
     echo "Enter your @palo-alto.edu email and your name.";
 }
-
 else{
     echo "Gotcha, we will be contacting you at $email shortly. To unsubscribe, just send an email to support@theteknet.org with the word \"Unsubscribe\" in the subject line, and we will be more then happy to remove your email from recieving updates";
     
@@ -79,7 +79,10 @@ mysqli_query($con,"INSERT INTO userinfo (email, name) VALUES ('$email','$name')"
 			<section class="color-2">
 			<h1>What is TekNet?</h1>
 			TekNet is a social network created by a group of Gunn studends designed for ALL PAUSD students ages 13+. TekNet will help PAUSD students connect, make friends (especially new students), find common classes, and get help with homework.
+			<br>
+			
 			</section>
+			
 						<section class="color-3">
 			<h1>When is TekNet going to be released?</h1>
 			TekNet has no public release schedule at this time. TekNet's release depends on the demand of users that have pre-registered. If we receive at least 45 pre-registration requests, we will be released around late December to early January.
